@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марина Переверзева — AI Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+        
+        .contacts {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .contacts a {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            transition: background 0.3s;
+        }
+        
+        .contacts a:hover {
+            background: rgba(255,255,255,0.35);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-card {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102,126,234,0.15);
+        }
+        
+        .skill-card h3 {
+            color: #667eea;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        
+        .skill-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin: 0;
+        }
+        
+        .project {
+            background: linear-gradient(135deg, #f5f7ff 0%, #fff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e8ecff;
+        }
+        
+        .project h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        
+        .project .bot-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 15px 0;
+            transition: background 0.3s;
+        }
+        
+        .project .bot-link:hover {
+            background: #5568d3;
+        }
+        
+        .project ul {
+            margin: 15px 0 15px 20px;
+        }
+        
+        .project li {
+            margin-bottom: 8px;
+        }
+        
+        .result {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin-top: 15px;
+        }
+        
+        .education-item {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .education-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .education-item .date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .education-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .education-item li {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9ff;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.8em; }
+            .content { padding: 25px; }
+            .section h2 { font-size: 1.3em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Марина Переверзева</h1>
+            <p class="subtitle">Специалист по внедрению ИИ · Junior Python-разработчик (AI) · Prompt Engineer</p>
+            <div class="contacts">
+                <a href="mailto:ammarilliys@gmail.com">✉️ Email</a>
+                <a href="https://t.me/Malina_NiNo" target="_blank">💬 Telegram</a>
+                <a href="https://github.com/Ammarilliys-svg" target="_blank">💻 GitHub</a>
+                <a href="#">📍 Нижний Новгород</a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>💡 Обо мне</h2>
+                <p>Специалист по разработке и внедрению решений на базе искусственного интеллекта. Выпускница программы ИОН РАНХиГС с успешным опытом создания автономных ИИ-агентов: от быстрого прототипирования в no-code средах до написания полноценного бэкенда на Python.</p>
+                <p>Умею переводить бизнес- и образовательные задачи в технические требования, писать сложные системные промпты и интегрировать LLM с внешними API. Стремлюсь создавать масштабируемые AI-продукты, которые решают реальные проблемы пользователей.</p>
+            </div>
+            
+            <div class="section">
+                <h2>🛠 Ключевые навыки</h2>
+                <div class="skills">
+                    <div class="skill-card">
+                        <h3>Разработка</h3>
+                        <p>Python, Telegram Bot API, n8n (No-code)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>AI и LLM</h3>
+                        <p>Qwen, GigaChat, ChatGPT, Kimi, Prompt Engineering</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Данные и контент</h3>
+                        <p>Парсинг, OCR, визуализация, генерация текстов</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Soft Skills</h3>
+                        <p>Системное мышление, дебаггинг, быстрая обучаемость</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🚀 Проект: ИИ-репетитор @mathemag_bot</h2>
+                <div class="project">
+                    <h3>📚 Автономный Telegram-бот для учеников 5 класса</h3>
+                    <p>Обучает решению математических задач через наводящие вопросы (сократический метод), не давая готовых ответов.</p>
+                    <a href="https://t.me/mathemag_bot" class="bot-link" target="_blank">💬 Попробовать бота</a>
+                    
+                    <h4 style="margin-top: 20px; color: #667eea;">🎯 Что было сделано:</h4>
+                    <ul>
+                        <li>Спроектировала педагогическую логику и написала строгие системные промпты в Qwen (запрет LaTeX, лимит символов, интеграция с Calculator).</li>
+                        <li>Изначально собрала <strong>MVP в n8n</strong> для быстрого тестирования гипотезы.</li>
+                        <li><strong>Миграция на Python:</strong> столкнувшись с инфраструктурными ограничениями n8n в РФ, самостоятельно переписала архитектуру бота на Python.</li>
+                        <li>Сгенерировала визуальный бренд (аватар, нейминг) через GigaChat и оформила презентацию с помощью Kimi.</li>
+                    </ul>
+                    
+                    <div class="result">
+                        <strong>🏆 Результат:</strong> Создан полностью рабочий, масштабируемый образовательный продукт. <strong>Бот успешно работает в продакшене по сей день</strong>, обеспечивая учеников поддержкой 24/7.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🎓 Образование</h2>
+                <div class="education-item">
+                    <h3>ИОН РАНХиГС (Президентская Академия)</h3>
+                    <p class="date">📅 Специалист по системам искусственного интеллекта · 14 апреля – 08 июня 2026 г.</p>
+                    <p><strong>Ключевые модули:</strong></p>
+                    <ul>
+                        <li>✅ Введение в ИИ и системы ИИ в повседневной жизни</li>
+                        <li>✅ Цифровые помощники и чат-боты</li>
+                        <li>✅ Работа с данными для гуманитариев</li>
+                        <li>✅ Компьютерное зрение и OCR</li>
+                        <li>✅ Технологии ИИ для работы с текстом</li>
+                        <li>✅ Безопасность и этика работы с ИИ</li>
+                        <li>✅ Итоговая проектная работа</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>[Ваш основной ВУЗ]</h3>
+                    <p class="date">📅 [Степень, специальность] · [Год окончания]</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 Марина Переверзева · Создано с ❤️ и помощью ИИ</p>
+        </div>
+    </div>
+</body>
+</html>
